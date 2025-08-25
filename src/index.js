@@ -1,10 +1,12 @@
 import express from 'express';
-import { Router } from 'express';
 import auth from './routes/auth.routes.js';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const app = express();
-const router = Router();
-const PORT = process.env.PORT || 3000;
+
+const PORT = process.env.Port || 3000;
 
 // Middleware
 app.use(express.json());
