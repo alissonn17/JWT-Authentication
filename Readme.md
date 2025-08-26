@@ -1,4 +1,4 @@
-# 📦 Backend - v1.0.0
+# 📦 JWT-Authentication - v1.0.0
 
 Este é um projeto test backend construído com [Express](https://expressjs.com/) e suporte a autenticação via JWT. Ele utiliza variáveis de ambiente com segurança reforçada e está preparado para desenvolvimento com Babel, Jest e Supertest.
 
