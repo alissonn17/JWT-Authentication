@@ -18,13 +18,13 @@ Este é um projeto test backend construído com [Express](https://expressjs.com/
 
 ## 📁 Estrutura do Projeto
 
-backend/
-├── src/ 
-│ └── index.js # Ponto de entrada da aplicação 
-├── .env # Variáveis de ambiente 
-├── .env.example # Exemplo de variáveis exigidas 
-├── package.json # Configurações e dependências 
-└── README.md # Documentação do projeto
+backend/  
+├── src/  
+│ └── index.js # Ponto de entrada da aplicação  
+├── .env # Variáveis de ambiente   
+├── .env.example # Exemplo de variáveis exigidas   
+├── package.json # Configurações e dependências   
+└── README.md # Documentação do projeto    
 
 
 ---
