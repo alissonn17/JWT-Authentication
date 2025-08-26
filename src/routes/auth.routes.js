@@ -22,7 +22,7 @@ auth.post('/login', (req, res) => {
     res.status(401).json({ message: "Credenciais inválidas" });
 });
 
-auth.post('/logout', verifyjwt, (req, res) => {
+auth.post('/logout', verifyjwt,  (req, res) => {
     const token = req.headers['authorization'].replace('Bearer ', '');
     blacklist[token] = true;
     setTimeout(() =>
@@ -39,7 +39,12 @@ auth.get("/", (req, res, next) => {
  
 auth.get("/clientes", verifyjwt,(req, res, next) => { 
     console.log("Retornou todos clientes!");
-    res.json([{id:1,nome:'luiz'}]);
+    res.json(
+        [
+            {id:1,nome:'luiz'},
+            {id:2,nome:'Fabio'},
+            {id:3,nome:'Pedro'},
+        ]);
 }) 
 
 export function verifyjwt(req, res, next){
